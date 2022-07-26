@@ -1,0 +1,12 @@
+name: SurvivalTools
+version: '${version}'
+main: me.ryanlauderbach.survivaltools.SurvivalTools
+api-version: 1.19
+authors: [ Ryan ]
+description: Tools for survival worlds
+
+commands:
+  home:
+    description: Teleports you to your spawnpoint
+  find:
+    description: Makes the player in question glow
