@@ -21,7 +21,7 @@ class Find : CommandExecutor {
 			playerToFind.isGlowing = true
 			playerToFind.sendMessage(ChatColor.GREEN.toString() + sender.name + " made you glow.")
 			
-			Bukkit.getScheduler().runTaskLater(SurvivalTools.plugin!!, Runnable { playerToFind.isGlowing = true }, 100)
+			Bukkit.getScheduler().runTaskLater(SurvivalTools.plugin!!, Runnable { playerToFind.isGlowing = false }, 100)
 		} else {
 			sender.sendMessage(ChatColor.RED.toString() + "Only players can use this command")
 		}
