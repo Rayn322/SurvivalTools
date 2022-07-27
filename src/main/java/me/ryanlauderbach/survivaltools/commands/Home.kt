@@ -7,7 +7,7 @@ import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 
 class Home : CommandExecutor {
-	override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<String>): Boolean {
+	override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
 		if (sender is Player) {
 			val bedSpawn = sender.bedSpawnLocation
 			

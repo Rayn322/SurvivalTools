@@ -10,3 +10,5 @@ commands:
     description: Teleports you to your spawnpoint
   find:
     description: Makes the player in question glow
+  tpa:
+    description: Requests to teleport you to a player

@@ -65,3 +65,9 @@ compileTestKotlin {
 		jvmTarget = "17"
 	}
 }
+
+task copyJar(type: Copy) {
+	dependsOn(build)
+	from file("${buildDir}/libs/survivaltools-${version}.jar")
+	into file("D:/MinecraftServers/Survival/plugins")
+}
