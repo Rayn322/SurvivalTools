@@ -1,4 +1,4 @@
-package me.ryanlauderbach.survivaltools.listeners
+package me.ryanlauderbach.survivaltools.listener
 
 import net.kyori.adventure.text.Component
 import org.bukkit.ChatColor

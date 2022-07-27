@@ -1,9 +1,9 @@
 package me.ryanlauderbach.survivaltools
 
-import me.ryanlauderbach.survivaltools.commands.Find
-import me.ryanlauderbach.survivaltools.commands.Home
-import me.ryanlauderbach.survivaltools.commands.Tpa
-import me.ryanlauderbach.survivaltools.listeners.DimensionNameColor
+import me.ryanlauderbach.survivaltools.command.Find
+import me.ryanlauderbach.survivaltools.command.Home
+import me.ryanlauderbach.survivaltools.command.Tpa
+import me.ryanlauderbach.survivaltools.listener.DimensionNameColor
 import org.bukkit.plugin.java.JavaPlugin
 
 class SurvivalTools : JavaPlugin() {
@@ -12,6 +12,7 @@ class SurvivalTools : JavaPlugin() {
 		getCommand("home")!!.setExecutor(Home())
 		getCommand("find")!!.setExecutor(Find())
 		getCommand("tpa")!!.setExecutor(Tpa())
+		getCommand("tpa")!!.tabCompleter = Tpa()
 		server.pluginManager.registerEvents(DimensionNameColor(), this)
 	}
 	

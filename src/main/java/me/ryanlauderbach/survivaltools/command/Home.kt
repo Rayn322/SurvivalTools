@@ -1,4 +1,4 @@
-package me.ryanlauderbach.survivaltools.commands
+package me.ryanlauderbach.survivaltools.command
 
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
