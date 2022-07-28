@@ -2,6 +2,7 @@ package me.ryanlauderbach.survivaltools
 
 import me.ryanlauderbach.survivaltools.command.Find
 import me.ryanlauderbach.survivaltools.command.Home
+import me.ryanlauderbach.survivaltools.command.Ping
 import me.ryanlauderbach.survivaltools.command.Tpa
 import me.ryanlauderbach.survivaltools.listener.DimensionNameColor
 import org.bukkit.plugin.java.JavaPlugin
@@ -13,6 +14,8 @@ class SurvivalTools : JavaPlugin() {
 		getCommand("find")!!.setExecutor(Find())
 		getCommand("tpa")!!.setExecutor(Tpa())
 		getCommand("tpa")!!.tabCompleter = Tpa()
+		getCommand("ping")!!.setExecutor(Ping())
+		getCommand("ping")!!.tabCompleter = Ping()
 		server.pluginManager.registerEvents(DimensionNameColor(), this)
 	}
 	
