@@ -8,10 +8,6 @@ import org.bukkit.command.CommandSender
 import org.bukkit.command.TabExecutor
 import org.bukkit.entity.Player
 
-
-
-
-
 class Tpa : TabExecutor {
 	
 	private val tpaRequests = ArrayList<TpaRequest>()
