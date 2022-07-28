@@ -44,8 +44,8 @@ class TpaRequest(requester: Player, destination: Player) {
 		
 		destination?.let { requester?.teleport(it) }
 		
-		destination?.sendMessage(ChatColor.GREEN.toString() + "Teleported to " + ChatColor.YELLOW + requester?.name + ChatColor.GREEN + ".")
-		requester?.sendMessage(ChatColor.GREEN.toString() + "Teleported " + ChatColor.YELLOW + destination?.name + ChatColor.GREEN + " to you.")
+		destination?.sendMessage(ChatColor.GREEN.toString() + "Teleported " + ChatColor.YELLOW + requester?.name + ChatColor.GREEN + " to you.")
+		requester?.sendMessage(ChatColor.GREEN.toString() + "Teleported to " + ChatColor.YELLOW + destination?.name + ChatColor.GREEN + ".")
 	}
 	
 	fun deny() {
