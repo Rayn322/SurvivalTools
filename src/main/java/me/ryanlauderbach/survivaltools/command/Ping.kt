@@ -3,10 +3,10 @@ package me.ryanlauderbach.survivaltools.command
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
+import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
-import org.bukkit.command.TabExecutor
 
-class Ping : TabExecutor {
+class Ping : CommandExecutor {
 	
 	override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
 		if (args == null || args.isEmpty()) {
@@ -22,19 +22,5 @@ class Ping : TabExecutor {
 		}
 		
 		return true
-	}
-	
-	override fun onTabComplete(sender: CommandSender, command: Command, label: String, args: Array<out String>?): MutableList<String>? {
-		return if (args?.size == 1) {
-			val list = mutableListOf<String>()
-			
-			for (player in Bukkit.getOnlinePlayers()) {
-				list.add(player.name)
-			}
-			
-			list.filter { it.startsWith(args[0], true) } as MutableList<String>
-		} else {
-			null
-		}
 	}
 }

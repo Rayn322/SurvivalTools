@@ -10,10 +10,6 @@ version = '1.0.0'
 
 repositories {
 	mavenCentral()
-//	maven {
-//		name = 'papermc-repo'
-//		url = 'https://repo.papermc.io/repository/maven-public/'
-//	}
 	maven {
 		name = 'sonatype'
 		url = 'https://oss.sonatype.org/content/groups/public/'
@@ -21,9 +17,8 @@ repositories {
 }
 
 dependencies {
-//	compileOnly 'io.papermc.paper:paper-api:1.19-R0.1-SNAPSHOT'
-	paperweightDevelopmentBundle 'io.papermc.paper:dev-bundle:1.19-R0.1-SNAPSHOT'
-	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+	paperweightDevelopmentBundle 'io.papermc.paper:dev-bundle:1.19.1-R0.1-SNAPSHOT'
+	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10'
 }
 
 def targetJavaVersion = 17
