@@ -18,7 +18,7 @@ class Ping : CommandExecutor {
 		if (player == null) {
 			sender.sendMessage(ChatColor.RED.toString() + "Player not found.")
 		} else {
-			sender.sendMessage(ChatColor.YELLOW.toString() + player.name + "'s" + ChatColor.GREEN + "Ping: " + player.ping)
+			sender.sendMessage(ChatColor.YELLOW.toString() + player.name + "'s " + ChatColor.GREEN + "ping: " + player.ping + "ms")
 		}
 		
 		return true
