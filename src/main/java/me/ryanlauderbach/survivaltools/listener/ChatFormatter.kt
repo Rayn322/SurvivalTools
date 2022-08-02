@@ -15,4 +15,3 @@ class ChatFormatter : Listener {
 		event.result(miniMessage.deserialize(plainMessage))
 	}
 }
-
