@@ -7,11 +7,11 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 
 class ChatFormatter : Listener {
-	
-	@EventHandler
-	fun onChatMessage(event: AsyncChatDecorateEvent) {
-		val miniMessage = MiniMessage.miniMessage()
-		val plainMessage = PlainTextComponentSerializer.plainText().serialize(event.originalMessage())
-		event.result(miniMessage.deserialize(plainMessage))
-	}
+
+    @EventHandler
+    fun onChatMessage(event: AsyncChatDecorateEvent) {
+        val miniMessage = MiniMessage.miniMessage()
+        val plainMessage = PlainTextComponentSerializer.plainText().serialize(event.originalMessage())
+        event.result(miniMessage.deserialize(plainMessage))
+    }
 }
