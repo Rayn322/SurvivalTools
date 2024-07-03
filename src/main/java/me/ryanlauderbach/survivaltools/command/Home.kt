@@ -9,10 +9,10 @@ import org.bukkit.entity.Player
 class Home : CommandExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
         if (sender is Player) {
-            val bedSpawn = sender.bedSpawnLocation
+            val respawnLoc = sender.respawnLocation
 
-            if (bedSpawn != null) {
-                sender.teleport(bedSpawn)
+            if (respawnLoc != null) {
+                sender.teleport(respawnLoc)
                 sender.sendMessage(ChatColor.GREEN.toString() + "Teleporting to spawn.")
             } else {
                 sender.teleport(sender.world.spawnLocation)
