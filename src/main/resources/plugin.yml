@@ -1,8 +1,8 @@
 name: SurvivalTools
-version: '${version}'
+version: 1.0.0
 main: me.ryanlauderbach.survivaltools.SurvivalTools
-api-version: 1.19
-authors: [ Ryan ]
+api-version: 1.21
+author: Ryan
 description: Tools for survival worlds
 
 commands:
